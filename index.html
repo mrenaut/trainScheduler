@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Scheduler</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--JQuery link-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+
+
+<body>
+
+    <!--div to center page sections-->
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <!--header-->
+            <div class="jumbotron">
+                <h1>Train Scheduler!</h1>
+                <p>Enter a train name and hit submit to see the schedule</p>
+            </div>
+
+            <!--table start-->
+            <table class="table table-striped" id="table">
+                <!--first row of table-->
+                <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency (min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+                <tr>
+                    <td id="trainNameTable">Jill</td>
+                    <td id="destinationTable">New York</td>
+                    <td id="frequencyTable">120</td>
+                    <td id="nextArrivalTable">120</td>
+                    <td id="minutesAway">120</td>
+                </tr>
+            </table>
+            
+            
+            <!--form start-->
+            <form>
+                <div class="form-group">
+                    <label>Train Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label>Destination</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label>First Train Time (HH:mm - Military time)</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Frequency (min)</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+                <!--submit button-->
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+
+
+        <!--end of div to center page sections-->    
+        </div>
+        <div class="col-md-2"></div>
+        </div>
+
+
+</body>
+<!--Jquery and Javascript links-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+
+</html>
