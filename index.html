@@ -7,7 +7,10 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--JQuery link-->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
@@ -23,7 +26,7 @@
             <!--header-->
             <div class="jumbotron">
                 <h1>Train Scheduler!</h1>
-                <p>Enter a train name and hit submit to see the schedule</p>
+                <p>Enter a train name and hit submit to add it to the schedule</p>
             </div>
 
             <!--table start-->
@@ -36,7 +39,7 @@
                     <th>Next Arrival</th>
                     <th>Minutes Away</th>
                 </tr>
-                <tr>
+                <tr id="tableRw">
                     <td id="trainNameTable">Jill</td>
                     <td id="destinationTable">New York</td>
                     <td id="frequencyTable">120</td>
@@ -50,23 +53,23 @@
             <form>
                 <div class="form-group">
                     <label>Train Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input class="form-control" id="trainInput" placeholder="Demon Train">
                 </div>
                 <div class="form-group">
                     <label>Destination</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input class="form-control" id="destinationInput" placeholder="New York">
                 </div>
                 <div class="form-group">
                     <label>First Train Time (HH:mm - Military time)</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input class="form-control" id="timeInput" placeholder="0:00">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Frequency (min)</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input class="form-control" id="frequencyInput" placeholder="Every 30 minutes">
                 </div>
 
                 <!--submit button-->
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
             </form>
 
 
