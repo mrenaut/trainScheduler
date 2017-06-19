@@ -26,7 +26,8 @@
             <!--header-->
             <div class="jumbotron">
                 <h1><strong>TRAIN SCHEDULER</strong></h1>
-                <p><strong>Enter a train name and click submit to add it to the schedule</strong></p>
+                <p><strong>Enter a train name, destination, time of arrival and click submit to add the train information to the schedule.</strong></p>
+                <p><strong>The last 10 trains entered into the databaase will be displayed.</strong></p>
             </div>
 
             <!--table start-->
@@ -37,8 +38,8 @@
                 <tr>
                     <th>Train Name</th>
                     <th>Destination</th>
-                    <th>Frequency (min)</th>
                     <th>Next Arrival</th>
+                    <th>Frequency (min)</th>
                     <th>Minutes Away</th>
                 </tr>
                 <tr id="tableRw">
@@ -57,7 +58,7 @@
             <form>
                 <div class="form-group">
                     <label>Train Name</label>
-                    <input class="form-control" id="trainInput" placeholder="Demon Train">
+                    <input class="form-control" id="trainInput" placeholder="Demo Train">
                 </div>
                 <div class="form-group">
                     <label>Destination</label>
@@ -69,7 +70,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Frequency (min)</label>
-                    <input class="form-control" id="frequencyInput" placeholder="Every 30 minutes">
+                    <input class="form-control" id="frequencyInput" placeholder="30 min">
                 </div>
 
                 <!--submit button-->
@@ -90,7 +91,7 @@
 <script src="https://www.gstatic.com/firebasejs/4.1.2/firebase.js"></script>   
 <!--Jquery and Javascript links-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="assets/javascript/app.js"></script>
 
 

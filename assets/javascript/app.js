@@ -47,7 +47,7 @@
 
         //captures information from input sectoin when user hits the submit button      
         $(document).on("click", "#submitButton", function (event) {
-            
+            $("#trainInput").focus();            
             trainName = $("#trainInput").val().trim();
             destinationName = $("#destinationInput").val().trim();
             trainTime = $("#timeInput").val().trim();
@@ -93,30 +93,8 @@
             $("#frequencyInput").val("");
         }
         
-        
-        
-        
-        
-        //Firebase access section
-        //===============================================================================================================
 
-        
-            
-            var clickCounter = 0;
-
-            
-            
-            
-            
-            
-            
-       // ===============================================================================================================
-
-        //    $.ajax({
-        //				url: queryURL,
-        //				method: "GET"
-        //			}).done(function(response) {
-
+    
 
 
         //end of document ready function    
